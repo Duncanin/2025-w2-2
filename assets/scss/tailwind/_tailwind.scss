@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// body {
+// // @apply bg-gray-100 text-gray-800;
+// }
+
+@layer base {
+    *, *::before, *::after {
+        box-sizing: border-box;
+        letter-spacing: 0.05em;
+    }
+}
