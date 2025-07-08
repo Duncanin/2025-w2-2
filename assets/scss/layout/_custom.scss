@@ -1,0 +1,71 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+	// outline: 1px solid red;
+    letter-spacing: 0.05em;
+    
+}
+body {
+    font-family:
+    "Noto Sans TC", sans-serif,
+    /* Cross-platform generic font family (default user interface font) */
+    system-ui,
+    /* Safari for macOS and iOS (San Francisco) */
+    -apple-system,
+    /* Chrome for macOS and iOS */
+    BlinkMacSystemFont,
+    /* Windows */
+    "Segoe UI", "Microsoft JhengHei",
+    /* Android */
+    Roboto,
+    /* older macOS and iOS */
+    "Helvetica Neue",
+    /* Linux */
+    "Noto Sans",
+    "Liberation Sans",
+    /* Basic web fallback */
+    Arial,
+    /* Sans serif fallback */
+    sans-serif,
+    /* Emoji fonts */
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+    line-height: 1.5;
+    font-weight: 500;
+}
+.container {
+    max-width: 1296px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: #212529;
+}
+
+.text-black {
+    color: #212529;
+}
+.text-white {
+    color: #FFFFFF;
+}
+.text-green {
+    color: #57A203;
+}
+.text-gray {
+    color: #6C757D;
+}
+.text-lightgray {
+    color: #DEE2E6;
+}
+
+.bg-primary {
+    background-color: #C0FA73;
+}
+.bg-lightgreen {
+    background-color: #E8FEC5;
+}
+
+.d-flex {
+    display: flex;
+}
