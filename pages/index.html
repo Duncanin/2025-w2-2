@@ -12,7 +12,7 @@
   <body>
     <%- include('./layout/header'); -%>
 
-    <div class="space-x-9 bg-amber-500 space-y-3">
+    <div class="space-x-9 bg-amber-500 space-y-3" hidden>
       <h1 class="text-red-700 font-extrabold text-4xl">text zone</h1>
       <button class="btn btn-outlined">
         <!-- <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -35,10 +35,11 @@
       <button class="btn-icon btn-filled">
         立即選購
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M1.25 10.0001C1.25 9.8343 1.31585 9.67533 1.43306 9.55812C1.55027 9.44091 1.70924 9.37506 1.875 9.37506H16.6163L12.6825 5.44256C12.5651 5.3252 12.4992 5.16603 12.4992 5.00006C12.4992 4.83409 12.5651 4.67492 12.6825 4.55756C12.7999 4.4402 12.959 4.37427 13.125 4.37427C13.291 4.37427 13.4501 4.4402 13.5675 4.55756L18.5675 9.55756C18.6257 9.61561 18.6719 9.68458 18.7034 9.76052C18.7349 9.83645 18.7511 9.91785 18.7511 10.0001C18.7511 10.0823 18.7349 10.1637 18.7034 10.2396C18.6719 10.3155 18.6257 10.3845 18.5675 10.4426L13.5675 15.4426C13.4501 15.5599 13.291 15.6258 13.125 15.6258C12.959 15.6258 12.7999 15.5599 12.6825 15.4426C12.5651 15.3252 12.4992 15.166 12.4992 15.0001C12.4992 14.8341 12.5651 14.6749 12.6825 14.5576L16.6163 10.6251H1.875C1.70924 10.6251 1.55027 10.5592 1.43306 10.442C1.31585 10.3248 1.25 10.1658 1.25 10.0001Z" fill="currentColor"/></svg>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M1.25 10.0001C1.25 9.8343 1.31585 9.67533 1.43306 9.55812C1.55027 9.44091 1.70924 9.37506 1.875 9.37506H16.6163L12.6825 5.44256C12.5651 5.3252 12.4992 5.16603 12.4992 5.00006C12.4992 4.83409 12.5651 4.67492 12.6825 4.55756C12.7999 4.4402 12.959 4.37427 13.125 4.37427C13.291 4.37427 13.4501 4.4402 13.5675 4.55756L18.5675 9.55756C18.6257 9.61561 18.6719 9.68458 18.7034 9.76052C18.7349 9.83645 18.7511 9.91785 18.7511 10.0001C18.7511 10.0823 18.7349 10.1637 18.7034 10.2396C18.6719 10.3155 18.6257 10.3845 18.5675 10.4426L13.5675 15.4426C13.4501 15.5599 13.291 15.6258 13.125 15.6258C12.959 15.6258 12.7999 15.5599 12.6825 15.4426C12.5651 15.3252 12.4992 15.166 12.4992 15.0001C12.4992 14.8341 12.5651 14.6749 12.6825 14.5576L16.6163 10.6251H1.875C1.70924 10.6251 1.55027 10.5592 1.43306 10.442C1.31585 10.3248 1.25 10.1658 1.25 10.0001Z" fill="currentColor"/>
+        </svg>
       </button>
       
-      <button class="btn-primary btn-sm">
+      <button class="btn btn-primary btn-sm">
         立即選購
         <!-- <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M1.25 10.0001C1.25 9.8343 1.31585 9.67533 1.43306 9.55812C1.55027 9.44091 1.70924 9.37506 1.875 9.37506H16.6163L12.6825 5.44256C12.5651 5.3252 12.4992 5.16603 12.4992 5.00006C12.4992 4.83409 12.5651 4.67492 12.6825 4.55756C12.7999 4.4402 12.959 4.37427 13.125 4.37427C13.291 4.37427 13.4501 4.4402 13.5675 4.55756L18.5675 9.55756C18.6257 9.61561 18.6719 9.68458 18.7034 9.76052C18.7349 9.83645 18.7511 9.91785 18.7511 10.0001C18.7511 10.0823 18.7349 10.1637 18.7034 10.2396C18.6719 10.3155 18.6257 10.3845 18.5675 10.4426L13.5675 15.4426C13.4501 15.5599 13.291 15.6258 13.125 15.6258C12.959 15.6258 12.7999 15.5599 12.6825 15.4426C12.5651 15.3252 12.4992 15.166 12.4992 15.0001C12.4992 14.8341 12.5651 14.6749 12.6825 14.5576L16.6163 10.6251H1.875C1.70924 10.6251 1.55027 10.5592 1.43306 10.442C1.31585 10.3248 1.25 10.1658 1.25 10.0001Z" fill="currentColor"/>
@@ -46,116 +47,139 @@
       </button>
     
     </div>
-    <!-- <Section class="product">
+
+
+    <Section class="product-list">
       <div class="container">
-        <div class="breadCrumbs d-flex">
-          <a href="#" class="text-gray">首頁</a>
-          <span class="divider text-lightgray">/</span>
-          <a href="#" class="text-black">所有商品</a>
-        </div>
+
+        <nav class="text-neutral-600 mt-8" aria-label="Breadcrumb">
+          <ol class="flex space-x-3">
+            <li><a href="#" class="link text-neutral-600 inline">首頁</a></li>
+            <li class="text-neutral-300">/</li>
+            <li class="text-neutral-900">所有商品</li>
+          </ol>
+        </nav>
+        
+        <!-- bootstrap breadcrumb -->
+        <nav aria-label="breadcrumb" hidden>
+          <ol class="breadcrumb flex space-x-3 items-center">
+            <li class="breadcrumb-item link text-neutral-600"><a href="#">首頁</a></li>
+            <li class="text-neutral-300">/</li>
+            <li class="breadcrumb-item active" aria-current="page">所有商品</li>
+          </ol>
+        </nav>
+        <h3 class="text-h3 py-[7.2px] my-6">
+          所有商品
+        </h3>
+
+      </div>
 
 
-        <h2 class="index-title">所有商品</h2>
+      <div class="container">
 
-        <div class="content d-flex">
+        <div class="grid grid-cols-12 gap-6">
 
 
-          <ul class="product-list">
-            <li><a href="#">所有商品</a></li>
-            <li><a href="#">慢跑鞋</a></li>
-            <li><a href="#">滑板鞋</a></li>
-            <li><a href="#">厚底鞋</a></li>
-            <li><a href="#">限定 / 聯名企劃</a></li>
-          </ul>
+          <nav class="col-span-2">
+            <ul class="">
+              <li><a href="#" class="link text-primary-400">所有商品</a></li>
+              <li><a href="#" class="link">慢跑鞋</a></li>
+              <li><a href="#" class="link">滑板鞋</a></li>
+              <li><a href="#" class="link">厚底鞋</a></li>
+              <li><a href="#" class="link">限定 / 聯名企劃</a></li>
+            </ul>
+          </nav>
 
-          <div class="product-list-container">
-            <ul class="d-flex card-row">
-              <li class="column">
-                <div class="card">
+          <div class="col-span-10">
+            <ul class="grid grid-cols-3 gap-x-6 gap-y-6 pb-12">
+              <li class="col-span-1">
+                <a class="card-link" href="#">
                   <div class="img"><img src="../assets/images/2025-week2/product.png" alt="product"></div>
-                  <div class="product-name">PLATFORM 404</div>
-                  <div class="product-price">$2,600</div>
-                </div>
+                  <div class="text-h6">PLATFORM 404</div>
+                  <div class="text-l-md">$2,600</div>
+                </a>
               </li>
-              <li class="column">
-                <div class="card">
+              <li class="col-span-1">
+                <a class="card-link" href="#">
                   <div class="img"><img src="../assets/images/2025-week2/product-1.png" alt="product"></div>
-                  <div class="product-name">PLATFORM 404</div>
-                  <div class="product-price">$2,600</div>
-                </div>
+                  <div class="text-h6">PLATFORM 404</div>
+                  <div class="text-l-md">$2,600</div>
+                </a>
               </li>
-              <li class="column">
-                <div class="card">
+              <li class="col-span-1">
+                <a class="card-link" href="#">
                   <div class="img"><img src="../assets/images/2025-week2/product-2.png" alt="product"></div>
-                  <div class="product-name">PLATFORM 404</div>
-                  <div class="product-price">$2,600</div>
-                </div>
+                  <div class="text-h6">VM001</div>
+                  <div class="text-l-md">$2,600</div>
+                </a>
               </li>
-              <li class="column">
-                <div class="card">
+              <li class="col-span-1">
+                <a class="card-link opacity-85" href="#">
                   <div class="img"><img src="../assets/images/2025-week2/product-3.png" alt="product"></div>
-                  <div class="product-name">PLATFORM 404</div>
-                  <div class="product-price">$2,600</div>
-                </div>
+                  <div class="text-h6">Melty Kiss</div>
+                  <div class="text-l-md">$4,000</div>
+                </a>
               </li>
-              <li class="column">
-                <div class="card">
+              <li class="col-span-1">
+                <a class="card-link" href="#">
                   <div class="img"><img src="../assets/images/2025-week2/product-4.png" alt="product"></div>
-                  <div class="product-name">PLATFORM 404</div>
-                  <div class="product-price">$2,600</div>
-                </div>
+                  <div class="text-h6">BOOMBLOK</div>
+                  <div class="text-l-md">$3,200</div>
+                </a>
               </li>
-              <li class="column">
-                <div class="card">
+              <li class="col-span-1">
+                <a class="card-link" href="#">
                   <div class="img"><img src="../assets/images/2025-week2/product-5.png" alt="product"></div>
-                  <div class="product-name">PLATFORM 404</div>
-                  <div class="product-price">$2,600</div>
-                </div>
+                  <div class="text-h6">BOOMBLOK</div>
+                  <div class="text-l-md">$3,200</div>
+                </a>
               </li>
-              <li class="column">
-                <div class="card">
+              <li class="col-span-1">
+                <a class="card-link" href="#">
                   <div class="img"><img src="../assets/images/2025-week2/product-6.png" alt="product"></div>
-                  <div class="product-name">PLATFORM 404</div>
-                  <div class="product-price">$2,600</div>
-                </div>
+                  <div class="text-h6">R:UNER</div>
+                  <div class="text-l-md">$4,000</div>
+                </a>
               </li>
-              <li class="column">
-                <div class="card">
+              <li class="col-span-1">
+                <a class="card-link" href="#">
                   <div class="img"><img src="../assets/images/2025-week2/product-7.png" alt="product"></div>
-                  <div class="product-name">PLATFORM 404</div>
-                  <div class="product-price">$2,600</div>
-                </div>
+                  <div class="text-h6">SUGAR SNAP</div>
+                  <div class="text-l-md">$4,000</div>
+                </a>
               </li>
-              <li class="column">
-                <div class="card">
+              <li class="col-span-1">
+                <a class="card-link" href="#">
                   <div class="img"><img src="../assets/images/2025-week2/product-8.png" alt="product"></div>
-                  <div class="product-name">PLATFORM 404</div>
-                  <div class="product-price">$2,600</div>
-                </div>
+                  <div class="text-h6">Neofoam</div>
+                  <div class="text-l-md">$4,000</div>
+                </a>
               </li>
-              <li class="column">
-                <div class="card">
+              <li class="col-span-1">
+                <a class="card-link" href="#">
                   <div class="img"><img src="../assets/images/2025-week2/product-9.png" alt="product"></div>
-                  <div class="product-name">PLATFORM 404</div>
-                  <div class="product-price">$2,600</div>
-                </div>
+                  <div class="text-h6">PLATFORM 404</div>
+                  <div class="text-l-md">$4,000</div>
+                </a>
               </li>
             </ul>
 
-            <ul class="pagination d-flex">
-              <li><a href="#"><i class="bi bi-chevron-left"></i></a></li>
-              <li><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">...</a></li>
-              <li><a href="#">10</a></li>
-              <li><a href="#"><i class="bi bi-chevron-right"></i></a></li>
+            <ul class="col-span-10 mx-auto flex justify-center space-x-2 [&>*:first-child]:me-1 [&>*:last-child]:ms-1">
+              <li><a href="#" class="iconbtn-40"><i class="bi bi-chevron-left"></i></a></li>
+              <li><a href="#" class="iconbtn-40 bg-primary-300">1</a></li>
+              <li><a href="#" class="iconbtn-40">2</a></li>
+              <li><a href="#" class="iconbtn-40">3</a></li>
+              <li><a href="#" class="iconbtn-40">...</a></li>
+              <li><a href="#" class="iconbtn-40">10</a></li>
+              <li><a href="#" class="iconbtn-40"><i class="bi bi-chevron-right"></i></a></li>
             </ul>
+          </div>
 
 
         </div>
       </div>
-    </Section> -->
+    </Section>
+
     
 
     <%- include('./layout/bannerSection'); -%>
