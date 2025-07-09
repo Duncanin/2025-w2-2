@@ -47,19 +47,21 @@
 
 
     .btn {
-        @apply font-medium px-6 py-3 h-12 rounded-radius-sm;
+        @apply font-medium px-6 py-3 h-12 rounded-radius-sm inline-block;
+        @apply flex items-center justify-center;
 
         @apply hover:text-neutral-600;
         @apply disabled:opacity-40 disabled:pointer-events-none;
     }
     .btn-icon {
         @apply font-medium px-6 py-3 flex items-center gap-2 rounded-radius-sm;
+        @apply flex items-center justify-center;
     }
 
     
 
     .btn-outlined {
-        @apply bg-neutral-0 text-neutral-900 outline outline-neutral-900;
+        @apply bg-neutral-0 text-neutral-900 outline outline-1 outline-neutral-900;
         
         @apply hover:text-neutral-0 hover:bg-neutral-900;
         @apply focus:text-neutral-0 focus:bg-neutral-900 focus:shadow-[0_0_0_3px_rgba(33,37,41,0.1)];
@@ -67,6 +69,7 @@
 
     .btn-filled {
         @apply bg-neutral-900 text-neutral-0;
+        @apply outline outline-1 outline-neutral-900;
         
         @apply hover:text-neutral-0 hover:bg-neutral-700;
         @apply focus:text-neutral-0 focus:bg-neutral-700 focus:shadow-[0_0_0_3px_rgba(33,37,41,0.1)];
@@ -75,6 +78,7 @@
 
     .btn-primary {
         @apply bg-primary-300 text-neutral-900;
+        @apply outline outline-1 outline-primary-300;
         
         @apply hover:text-primary-500;
         @apply focus:shadow-[0_0_0_3px_rgba(192,250,115,0.4)];
@@ -102,4 +106,31 @@
     .iconbtn-outlined {
         @apply text-primary-500 bg-primary-100 border-2 border-primary-400;
     }
+
+    .opt {
+        @apply w-40 h-12 py-3 px-6 rounded-radius-xs;
+        @apply border;
+        @apply text-l-md;
+
+        @apply hover:border-neutral-600;
+        @apply focus:border-neutral-600;
+        @apply disabled:opacity-40 disabled:pointer-events-none;
+    }
+
+    .opt-img {
+        @apply w-16 h-[92px] flex gap-1 flex-wrap justify-center;
+        @apply text-neutral-600 text-l-md;
+
+
+        @apply disabled:opacity-40 disabled:pointer-events-none;
+    }
+
+    .group-opt-img:focus-within img {
+        @apply hover:opacity-85;
+        @apply outline outline-1 outline-neutral-900;
+    }
+    .group-opt-img:focus-within span {
+        @apply text-neutral-900;
+    }
+
 }
